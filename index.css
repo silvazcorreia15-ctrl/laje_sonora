@@ -12,7 +12,7 @@
     --fita: #F3C623;
     --branco: #FFFFFF;
 
-    --fonte-cartaz: 'Big Shoulders Display', 'Arial Narrow', sans-serif;
+    --fonte-cartaz: 'Big Shoulders', 'Arial Narrow', sans-serif;
     --fonte-texto: 'Archivo', Arial, sans-serif;
   }
   
@@ -31,7 +31,7 @@ a {
 
 
 h1, h2, h3 {
-  font-family: 'fonte-cartaz', sans-serif; 
+  font-family: var(--fonte-cartaz);
   font-weight: 900;
   line-height: 0.95;
 }
@@ -43,3 +43,36 @@ h1, h2, h3 {
   padding-inline: 32px;
 }
 
+.topo {
+    padding-block: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--fonte-cartaz);
+    font-size: 34px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    gap: 36px;
+}
+
+.menu a {
+    font-weight: 600;
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 4px solid transparent;
+}
+
+.menu a:hover {
+    border-bottom-color: var(--tinta);
+}
+
+.menu a.atual {
+    border-bottom-color: var(--fita);
+}
