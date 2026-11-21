@@ -231,6 +231,25 @@ h1, h2, h3 {
   flex: 1;
 }
 
+@media (max-width: 800px) {
+  .cartazes,
+  .passos {
+    flex-direction: column;
+  }
+
+  .rodape {
+    flex-direction: column;
+  }
+
+  .rodape-colunas {
+    flex-direction: column;
+  }
+
+  .cartaz-principal h1 {
+    font-size: 84px;
+  }
+}
+
 .rodape h4 {
   font-family: var(--fonte-cartaz);
   font-size: 28px;

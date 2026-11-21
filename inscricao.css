@@ -232,3 +232,22 @@ h1, h2, h3 {
 .botao:hover {
   background-color: var(--caixa-dagua);
 }
+
+@media (max-width: 800px) {
+  .inscricao,
+  .linha {
+    flex-direction: column;
+  }
+
+  .rodape {
+    flex-direction: column;
+  }
+
+  .rodape-colunas {
+    flex-direction: column;
+  }
+
+  .titulo-pagina {
+    font-size: 96px;
+  }
+}
